@@ -1,12 +1,12 @@
 .image_wrap {
   float: left;
-  width: 25%;
+  width: 23%;
   background-color: #000;
   cursor: pointer;
+  padding: 1%;
 }
 
 .image {
-  border: 1px solid #ddd;
   overflow: hidden;
   height: 100px;
   transition: all 0.2s ease-in-out;
@@ -14,4 +14,8 @@
 
 .image:hover {
   transform: scale(1.1);
+}
+
+.image_active {
+  transform: scale(1.3);
 }

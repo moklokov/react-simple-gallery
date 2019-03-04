@@ -27,7 +27,7 @@ class Gallery extends Component {
           <Slider image={images[active]} count={images.length} active={active + 1} onNext={this.handleNext} onPrev={this.handlePrev}/>
         </div>
         <div className={styles.sidebar}>
-          <Sidebar images={images}/>
+          <Sidebar images={images} active={active} onChangeActive={this.handleChangeActive}/>
         </div>
       </div>
     )
@@ -36,6 +36,8 @@ class Gallery extends Component {
   handleNext = ()=> this.setState({ active: this.state.active + 1 });
 
   handlePrev = ()=> this.setState({ active: this.state.active - 1 });
+
+  handleChangeActive = (index)=> this.setState({ active: index });
 }
 
 export default Gallery
