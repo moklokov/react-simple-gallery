@@ -1,0 +1,17 @@
+.image_wrap {
+  float: left;
+  width: 25%;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.image {
+  border: 1px solid #ddd;
+  overflow: hidden;
+  height: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
