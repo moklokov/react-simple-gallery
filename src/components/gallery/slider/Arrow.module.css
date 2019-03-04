@@ -19,3 +19,11 @@
   color: #fff;
   font-size: 7vh;
 }
+
+.disable {
+  background-color: #ddd;
+}
+.disable:hover {
+  opacity: 0.3;
+  cursor: default;
+}
