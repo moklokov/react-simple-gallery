@@ -1,3 +1,7 @@
+.wrap {
+  height: 100%;
+}
+
 .main {
   float: left;
   width: 70%;
